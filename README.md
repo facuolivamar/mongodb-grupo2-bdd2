@@ -1,67 +1,79 @@
-## Introducción a MongoDB
+# MongoDB - Informe Grupo 2
 
-MongoDB es una base de datos NoSQL ampliamente utilizada que se destaca por su flexibilidad y capacidad para gestionar datos no estructurados y semiestructurados. En esta introducción, exploraremos MongoDB y sus diferencias con las bases de datos SQL tradicionales. Además, discutiremos los usos, características clave y términos asociados con esta plataforma.
+**Fecha:** 08.11.2023
 
-## MongoDB
+**Materia:** Base De Datos 2
 
-MongoDB es una base de datos NoSQL que se basa en el modelo de documentos. En contraste con las bases de datos SQL que utilizan tablas con filas y columnas para almacenar datos, MongoDB utiliza documentos JSON para representar la información. Cada documento se asemeja a un objeto JSON y puede contener datos de diferentes tipos sin un esquema estricto.
+**Tema:** MongoDB
 
-## Comparación entre MongoDB y SQL
+**Integrantes:**
+- Andino Guillermo
+- Galaverna Lorenzo
+- Gonzalez Juan Ignacio
+- Güell Tomás
+- Márquez Lisandro
+- Oliva Marchetto Facundo
 
-Una de las principales diferencias entre MongoDB y las bases de datos SQL radica en su modelo de datos. Mientras que las bases de datos SQL almacenan datos en tablas con filas y columnas, MongoDB utiliza documentos JSON. Esta distinción es fundamental ya que proporciona ventajas significativas en términos de:
+**Profesores:**
+- Frattin Juan
+- Reyna Teodoro
 
-- **json objects vs. rows and columns:** En MongoDB, los datos se almacenan en objetos JSON, lo que permite una representación más flexible y versátil en comparación con las tablas de SQL.
+## Contenido del Informe
 
-## Usos y características
+1. [**Introducción a MongoDB**](#1-introducción-a-mongodb) - 2
+2. [**MongoDB**](#2-mongodb) - 2
+3. [**Profundizando sobre BSON**](#3-profundizando-sobre-bson) - 2
+4. [**Usos y características**](#4-usos-y-características) - 2
+5. [**Documentos, Colecciones y Bases de Datos**](#5-documentos-colecciones-y-bases-de-datos) - 4
+6. [**Comparación entre MongoDB y SQL**](#6-comparación-entre-mongodb-y-sql) - 4
+7. [**Comenzando con MongoDB Atlas UI**](#7-comenzando-con-mongodb-atlas-ui) - 6
+8. [**Modelo de Documentos en MongoDB**](#8-modelo-de-documentos-en-mongodb) - 7
+9. [**Esquema**](#9-esquema) - 7
+10. [**Sintaxis**](#10-sintaxis) - 7
+11. [**Modelado de Datos en MongoDB**](#11-modelado-de-datos-en-mongodb) - 8
+12. [**Diferencias entre bases de datos relacionales y no relacionales**](#12-diferencias-entre-bases-de-datos-relacionales-y-no-relacionales) - 8
+13. [**Principios de MongoDB**](#13-principios-de-mongodb) - 9
+14. [**Relaciones comunes**](#14-relaciones-comunes) - 9
+15. [**Formas de modelar datos (Embedding, Referencing)**](#15-formas-de-modelar-datos-embedding-referencing) - 11
+16. [**Escalabilidad de un modelo de datos**](#16-escalabilidad-de-un-modelo-de-datos) - 12
+17. [**Conexión a una base de datos MongoDB**](#17-conexión-a-una-base-de-datos-mongodb) - 13
+18. [**Implementación de Connection Strings desde Aplicacion Node.js**](#18-implementación-de-connection-strings-desde-aplicacion-nodejs) - 13
+19. [**Operaciones CRUD en MongoDB**](#19-operaciones-crud-en-mongodb) - 15
+20. [**Inserción de documentos en una colección MongoDB (Create)**](#20-inserción-de-documentos-en-una-colección-mongodb-create) - 15
+21. [**Búsqueda de documentos en una colección MongoDB (Read)**](#21-búsqueda-de-documentos-en-una-colección-mongodb-read) - 16
+22. [**Actualización de documentos (Update)**](#22-actualización-de-documentos-update) - 17
+23. [**Eliminación de documentos (Delete)**](#23-eliminación-de-documentos-delete) - 19
+24. [**Transacciones (Transactions)**](#24-transacciones-transactions) - 20
+25. [**Aggregation en MongoDB**](#25-aggregation-en-mongodb) - 22
+26. [**Definiciones Clave y Estructura**](#26-definiciones-clave-y-estructura) - 22
+27. [**Stages más usadas comúnmente y ejemplos**](#27-stages-más-usadas-comúnmente-y-ejemplos) - 22
+28. [**Índices en MongoDB en Colecciones**](#28-índices-en-mongodb-en-colecciones) - 25
+29. [**Tipos de índices más comunes**](#29-tipos-de-índices-más-comunes) - 26
+30. [**Otros métodos para realizar sobre índices**](#30-otros-métodos-para-realizar-sobre-índices) - 27
+31. [**Eliminación de índices**](#31-eliminación-de-índices) - 29
+32. [**Material de Presentación**](#32-material-de-presentación) - 29
+33. [**Bibliografía**](#33-bibliografía) - 30
 
-MongoDB se adapta a una variedad de casos de uso, desde proyectos educativos personales hasta aplicaciones empresariales. Algunos de los escenarios comunes donde MongoDB brilla incluyen:
+## Enlaces Útiles
 
-- **Personal educational projects:** MongoDB es una elección popular para proyectos educativos personales debido a su facilidad de uso y flexibilidad.
+- [Repositorio en GitHub](https://github.com/facuolivamar/mongodb-grupo2-bdd2)
+- [Presentación en Genially](https://view.genial.ly/654950d16dfa440011df2a1b/presentation-presentacion-uni-educacion)
 
-- **Start-ups:** Muchas startups optan por MongoDB debido a su capacidad de escalar y adaptarse a las cambiantes necesidades de negocio.
+## Actividades Realizadas
 
-- **Enterprise applications:** MongoDB también se utiliza en aplicaciones empresariales que requieren manejar grandes volúmenes de datos de manera eficiente.
+### Actividad Python
+- [Código en GitHub](https://github.com/facuolivamar/mongodb-grupo2-bdd2/blob/main/act-connection.py)
 
-### Ejemplos
+### Kahoot
+- [Diapositivas en GitHub](https://github.com/facuolivamar/mongodb-grupo2-bdd2/tree/main/Multimedia%20Actividades/kahoot)
 
-MongoDB se utiliza en una variedad de aplicaciones, que incluyen:
+### Informe
+- [PDF](https://github.com/facuolivamar/mongodb-grupo2-bdd2/tree/main/Multimedia%20Actividades/kahoot)
 
-- **E-commerce:** Para gestionar el catálogo de productos y los datos del cliente.
-
-- **Content management:** Para crear sistemas de gestión de contenido ágiles.
-
-- **IoT and time-series data:** Ideal para capturar datos generados por dispositivos IoT y datos de series temporales.
-
-- **Trading and Payments:** Se utiliza en aplicaciones financieras para gestionar transacciones.
-
-- **Gaming:** En juegos en línea para administrar perfiles de jugadores y puntuaciones.
-
-- **Mobile Apps:** Para almacenar datos de aplicaciones móviles y proporcionar una experiencia rápida.
-
-- **Real-time analytics and AI:** Permite el análisis de datos en tiempo real y aplicaciones de inteligencia artificial.
-
-Algunas de las características clave que hacen que MongoDB sea atractivo incluyen:
-
-- **Escalabilidad:** MongoDB es altamente escalable y puede manejar grandes cantidades de datos y tráfico.
-
-- **Resiliencia:** Ofrece capacidades de replicación y recuperación ante fallos para garantizar la disponibilidad de los datos.
-
-- **Velocidad de desarrollo:** La flexibilidad del modelo de datos permite un desarrollo ágil y rápido de aplicaciones.
-
-- **Privacidad y Seguridad:** MongoDB ofrece características de seguridad avanzada, como autenticación y autorización.
-
-## Documentos, Colecciones y Bases de Datos
-
-En MongoDB, los documentos son la unidad básica de datos y se asemejan a objetos JSON. Estos documentos se agrupan en colecciones, y las colecciones a su vez se almacenan en bases de datos. Esta estructura jerárquica permite una organización eficiente de los datos y facilita el acceso a la información.
-
-## Modelo de Documentos en MongoDB
-
-MongoDB admite una variedad de tipos de datos que se pueden almacenar en documentos. Esto incluye tipos de datos JSON como cadenas de texto, números, booleanos, arreglos, objetos anidados, fechas (Date), y otros tipos de datos específicos de MongoDB, como ObjectID, BinData y Decimal128. Los tipos de datos de MongoDB son fundamentales para el almacenamiento de datos heterogéneos y complejos.
-
-## Esquema
-
-El esquema en MongoDB es flexible y dinámico. A diferencia de las bases de datos relacionales, no es necesario definir un esquema rígido antes de insertar datos. Puedes modificar el esquema de tus documentos en cualquier momento, lo que permite la adición de nuevos campos sin requerir cambios en la estructura de documentos existentes. Además, MongoDB ofrece la opción de validar esquemas de documentos de manera opcional, lo que te permite establecer restricciones en la estructura de los documentos si lo deseas.
-
-## Conclusiones
-
-MongoDB es una base de datos NoSQL popular que se adapta a una variedad de casos de uso debido a su flexibilidad y escalabilidad. Al utilizar documentos JSON en lugar de tablas, MongoDB facilita el almacenamiento y la recuperación de datos heterogéneos y cambiantes. Su modelo de datos dinámico y su capacidad para escalar hacen que sea una elección atractiva para desarrolladores y empresas que buscan una solución de base de datos versátil y eficiente.
+## Acreditaciones
+- Certificados obtenidos durante la capacitación en [MongoDB University](https://university.mongodb.com/):
+  - [Certificado 1](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-4c7a5c46-989f-414a-9ee3-641247900a9d-certificate.pdf)
+  - [Certificado 2](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-233581d8-06a4-4eef-a070-5461b902452b-certificate.pdf)
+  - [Certificado 3](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-139aaada-91d0-4c19-96bf-6eb2c9a90068-certificate.pdf)
+  - [Certificado 4](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/2f59ca0e-a46b-4ec3-95af-e38007a696ca-llmtech-n-a-3c93076e-9f33-4df5-a6c7-cbd14401ef0d-certificate.pdf)
+  - [Certificado 5](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/2f59ca0e-a46b-4ec3-95af-e38007a696ca-llmtech-n-a-427f2270-22f2-4248-93ed-f1bc57fa2c9e-certificate.pdf)
