@@ -72,4 +72,10 @@
 
 ## Acreditaciones
 - Certificados obtenidos durante la capacitación en [MongoDB University](https://university.mongodb.com/):
-  - [Proof of Completion](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-f8378a30-72ef-4d3f-9f33-01ed410efa2a-certificate.pdf)
+  - [Certificado 1](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-4c7a5c46-989f-414a-9ee3-641247900a9d-certificate.pdf)
+  - [Certificado 2](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-233581d8-06a4-4eef-a070-5461b902452b-certificate.pdf)
+  - [Certificado 3](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-139aaada-91d0-4c19-96bf-6eb2c9a90068-certificate.pdf)
+  - [Certificado 4](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/2f59ca0e-a46b-4ec3-95af-e38007a696ca-llmtech-n-a-3c93076e-9f33-4df5-a6c7-cbd14401ef0d-certificate.pdf)
+  - [Certificado 5](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/2f59ca0e-a46b-4ec3-95af-e38007a696ca-llmtech-n-a-427f2270-22f2-4248-93ed-f1bc57fa2c9e-certificate.pdf)
+  - +10 Certificados individuales ...
+  - [Final Proof of Completion](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-f8378a30-72ef-4d3f-9f33-01ed410efa2a-certificate.pdf)
