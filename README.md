@@ -65,6 +65,7 @@
 - [Código en GitHub](https://github.com/facuolivamar/mongodb-grupo2-bdd2/blob/main/act-connection.py)
 
 ### Kahoot
+- ![Ejemplo](https://github.com/facuolivamar/mongodb-grupo2-bdd2/blob/main/Multimedia%20Actividades/kahoot/Screenshot%20from%202023-11-08%2009-03-51.png)
 - [Diapositivas en GitHub](https://github.com/facuolivamar/mongodb-grupo2-bdd2/tree/main/Multimedia%20Actividades/kahoot)
 
 ### Informe
@@ -72,6 +73,8 @@
 
 ## Acreditaciones
 - Certificados obtenidos durante la capacitación en [MongoDB University](https://university.mongodb.com/):
+  - ![Imagen](Multimedia%20Actividades/MongoDB-University/Proof%20of%20Completion%20-%20MongoDB%20University.png)
+  - ![Imagen](Multimedia%20Actividades/MongoDB-University/Dashboard-screenshot.png)
   - [Certificado 1](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-4c7a5c46-989f-414a-9ee3-641247900a9d-certificate.pdf)
   - [Certificado 2](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-233581d8-06a4-4eef-a070-5461b902452b-certificate.pdf)
   - [Certificado 3](https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f6d4b15e-2a0e-4632-9af8-d191e936eb99-facundo-oliva-marchetto-139aaada-91d0-4c19-96bf-6eb2c9a90068-certificate.pdf)
